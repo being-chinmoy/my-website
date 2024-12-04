@@ -42,3 +42,11 @@ footer {
     background: #333;
     color: #fff;
 }
+.profile-photo {
+    width: 250px; /* Adjust the width as needed */
+    height: 250px; /* Maintain the aspect ratio */
+    border-radius: 50%; /* Makes the photo circular */
+    display: block; /* Ensures the photo behaves like a block element */
+    margin: 0 auto; /* Centers the photo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
