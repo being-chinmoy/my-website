@@ -31,7 +31,10 @@ nav ul li a {
     text-decoration: none;
 }
 
-section {
+section  {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+    text-align: justify;
     padding: 2em;
     margin: 1em 0;
 }
