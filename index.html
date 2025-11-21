@@ -1,8 +1,252 @@
-class="fab fa-linkedin-in"></i></a>
-</div>
-<p>&copy; 2024 Chinmoy Deka. Crafted with passion.</p>
-</footer>
-<script src="script.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinmoy Deka | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#resume" class="nav-link">Resume</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <canvas id="hero-canvas"></canvas>
+        <div class="hero-content">
+            <img src="photos/myphoto.jpg" alt="Chinmoy Deka" class="profile-photo">
+            <h1>Chinmoy Deka</h1>
+            <h2>Data Analyst | Researcher | Problem Solver</h2>
+
+            <div class="social-links">
+                <a href="https://www.facebook.com/IamChinmoyDeka/" target="_blank" class="social-icon"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/in/beingdeka/" target="_blank" class="social-icon"><i
+                        class="fab fa-linkedin-in"></i></a>
+            </div>
+
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">View Work</a>
+                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p class="lead-text">I am a data analyst with expertise in Power BI, Python, and Tableau.</p>
+                <p>Dynamic professional with a solid foundation in research, management, and technology from Indian
+                    Institutes of Management (IIM) and National Institutes of Technology (NIT). I have built a strong
+                    foundation in research, management, and technology.</p>
+                <p>A strategic communication and research professional with a proven track record of success in driving
+                    business growth. My career has been marked by successful contributions in various capacities,
+                    including project management, Data Analysis, ERP management, client relations, application
+                    deployment, user training, and consulting.</p>
+                <p>Fuelling innovation through the fusion of technology and research, I am a dynamic catalyst driving
+                    transformative change at the crossroads of engineering and governance.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Technical Expertise</h2>
+            <div class="chart-container">
+                <canvas id="skills-chart"></canvas>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Data Analysis</h3>
+                    <p>Python, Pandas, SQL, Excel</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Visualization</h3>
+                    <p>Tableau, PowerBI, Matplotlib</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Machine Learning</h3>
+                    <p>Scikit-learn, TensorFlow, Keras</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Web Dev</h3>
+                    <p>HTML5, CSS3, JavaScript</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume" class="section">
+        <div class="container">
+            <h2 class="section-title">Resume</h2>
+            <div class="resume-grid">
+                <div class="resume-item">
+                    <h3>Education</h3>
+                    <ul>
+                        <li><strong>MBA</strong> - IIM Visakhapatnam</li>
+                        <li><strong>B.Tech</strong> - NIT Silchar</li>
+                    </ul>
+                </div>
+                <div class="resume-item">
+                    <h3>Core Competencies</h3>
+                    <ul>
+                        <li>Project Management & Support</li>
+                        <li>Business Development</li>
+                        <li>Cross-functional Leadership</li>
+                        <li>Data Analysis</li>
+                        <li>Relationship Management</li>
+                        <li>Resource Optimization & Planning</li>
+                        <li>Capacity Building</li>
+                    </ul>
+                </div>
+                <div class="resume-item">
+                    <h3>Experience</h3>
+                    <ul>
+                        <li>IT Specialist</li>
+                        <li>Consultant in Skill Development</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="resume.pdf" target="_blank" class="btn btn-secondary">Download Full Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="photos/project_stock.png" alt="Market Trend Analysis" class="project-img">
+                    <div class="project-content">
+                        <h3>Market Trend Analysis</h3>
+                        <p>Predicting stock movements using historical data and sentiment analysis.</p>
+                        <button class="btn-text view-project-btn" data-project="stock">View Case Study &rarr;</button>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="photos/project_customer.png" alt="Customer Segmentation" class="project-img">
+                    <div class="project-content">
+                        <h3>Customer Segmentation</h3>
+                        <p>Clustering algorithms to identify key customer personas for targeted marketing.</p>
+                        <button class="btn-text view-project-btn" data-project="customer">View Case Study
+                            &rarr;</button>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="photos/project_dashboard.png" alt="Interactive Dashboard" class="project-img">
+                    <div class="project-content">
+                        <h3>Interactive Dashboard</h3>
+                        <p>Real-time sales tracking dashboard built with Streamlit and Plotly.</p>
+                        <button class="btn-text view-project-btn" data-project="dashboard">View Case Study
+                            &rarr;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p><a href="mailto:chinmoy.deka.spmu@gmail.com">chinmoy.deka.spmu@gmail.com</a></p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p><a href="tel:+918638900840">+91 86389 00840</a></p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fab fa-linkedin"></i>
+                        <p><a href="https://www.linkedin.com/in/beingdeka" target="_blank">LinkedIn Profile</a></p>
+                    </div>
+                </div>
+                <form id="contact-form" class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <div id="form-status" class="form-status"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals -->
+    <div id="modal-stock" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Market Trend Analysis</h2>
+            <img src="photos/project_stock.png" alt="Stock Analysis" class="modal-img">
+            <p><strong>Tech Stack:</strong> Python, Pandas, Scikit-Learn</p>
+            <p>In this project, I analyzed historical stock data to predict future trends. Using sentiment analysis on
+                financial news and technical indicators, I built a model that achieved 85% accuracy in predicting
+                directional movement.</p>
+            <a href="#" class="btn btn-secondary">View on GitHub</a>
+        </div>
+    </div>
+
+    <div id="modal-customer" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Customer Segmentation</h2>
+            <img src="photos/project_customer.png" alt="Customer Segmentation" class="modal-img">
+            <p><strong>Tech Stack:</strong> Python, K-Means Clustering, Matplotlib</p>
+            <p>I used unsupervised learning to segment a customer dataset into distinct personas. This analysis helped
+                the marketing team tailor their campaigns, resulting in a 20% increase in conversion rates.</p>
+            <a href="#" class="btn btn-secondary">View on GitHub</a>
+        </div>
+    </div>
+
+    <div id="modal-dashboard" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Interactive Dashboard</h2>
+            <img src="photos/project_dashboard.png" alt="Dashboard" class="modal-img">
+            <p><strong>Tech Stack:</strong> Streamlit, Plotly, SQL</p>
+            <p>A real-time dashboard connected to a SQL database. It visualizes key performance indicators (KPIs) for
+                sales and inventory, allowing stakeholders to make data-driven decisions instantly.</p>
+            <a href="#" class="btn btn-secondary">View on GitHub</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="social-links footer-social">
+            <a href="https://www.facebook.com/IamChinmoyDeka/" target="_blank" class="social-icon"><i
+                    class="fab fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/in/beingdeka/" target="_blank" class="social-icon"><i
+                    class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p>&copy; 2024 Chinmoy Deka. Crafted with passion.</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
