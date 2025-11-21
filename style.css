@@ -84,11 +84,21 @@ nav {
     border-bottom: var(--glass-border);
 }
 
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70px;
+}
+
 nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
-    padding: 1.5rem 0;
+    padding: 0;
     margin: 0;
     gap: 2rem;
 }
@@ -120,6 +130,38 @@ nav a:hover,
 nav a.active {
     color: var(--accent-primary);
     text-shadow: 0 0 10px var(--accent-primary);
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 6px;
+    z-index: 1001;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: var(--text-primary);
+    transition: all 0.3s ease;
+    border-radius: 3px;
+}
+
+/* Hamburger Animation */
+.menu-toggle.active .bar:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+    background-color: var(--accent-primary);
+}
+
+.menu-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active .bar:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+    background-color: var(--accent-primary);
 }
 
 /* Hero Section */
@@ -330,10 +372,35 @@ footer {
         font-size: 2.5rem;
     }
 
+    .nav-container {
+        justify-content: flex-end;
+        padding: 1rem 2rem;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
     nav ul {
-        gap: 1rem;
-        font-size: 0.8rem;
-        padding: 1rem 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(11, 16, 33, 0.98);
+        backdrop-filter: blur(20px);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        transform: translateY(-100%);
+        transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        z-index: 1000;
+        font-size: 1.5rem;
+    }
+
+    nav ul.active {
+        transform: translateY(0);
     }
 
     .hero::before,
@@ -347,6 +414,20 @@ footer {
     .resume-grid,
     .contact-grid {
         grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 3rem 0;
+    }
+
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .profile-photo {
+        width: 150px;
+        height: 150px;
     }
 }
 
