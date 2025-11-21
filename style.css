@@ -332,62 +332,6 @@ nav a.active {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding-top: 80px;
-    position: relative;
-    overflow: hidden;
-}
-
-#hero-canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-
-/* Background Glow Effects */
-.hero::before {
-    content: '';
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    background: var(--accent-primary);
-    filter: blur(150px);
-    opacity: 0.1;
-    top: 20%;
-    left: 20%;
-    border-radius: 50%;
-    z-index: -2;
-    animation: float 10s infinite alternate;
-    transform: translate(calc(var(--mouse-x, 0) * 30px), calc(var(--mouse-y, 0) * 30px));
-    transition: transform 0.1s ease-out;
-}
-
-.hero::after {
-    content: '';
-    position: absolute;
-    width: 400px;
-    height: 400px;
-    background: var(--accent-secondary);
-    filter: blur(150px);
-    opacity: 0.1;
-    bottom: 20%;
-    right: 20%;
-    border-radius: 50%;
-    z-index: -2;
-    animation: float 8s infinite alternate-reverse;
-    transform: translate(calc(var(--mouse-x, 0) * -30px), calc(var(--mouse-y, 0) * -30px));
-    transition: transform 0.1s ease-out;
-}
-
-.hero-content {
-    animation: fadeInUp 1s ease-out;
-}
-
-.profile-photo {
-    width: 200px;
-    height: 200px;
     border-radius: 50%;
     object-fit: cover;
     border: 4px solid transparent;
